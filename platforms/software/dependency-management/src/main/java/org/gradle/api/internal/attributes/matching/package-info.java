@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 the original author or authors.
+ * Copyright 2024 the original author or authors.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,13 +14,7 @@
  * limitations under the License.
  */
 
-package org.gradle.api.internal.artifacts.transform;
+@NonNullApi
+package org.gradle.api.internal.attributes.matching;
 
-import org.gradle.api.artifacts.component.ComponentIdentifier;
-import org.gradle.api.internal.attributes.ImmutableAttributes;
-import org.gradle.api.internal.file.FileCollectionInternal;
-import org.gradle.api.specs.Spec;
-
-public interface FilteredResultFactory {
-    FileCollectionInternal resultsMatching(ImmutableAttributes attributes, Spec<? super ComponentIdentifier> filter);
-}
+import org.gradle.api.NonNullApi;
